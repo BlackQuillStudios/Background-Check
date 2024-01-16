@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Background Check</title>
+</head>
+<body>
+  <div class="container">
+    <form id="backgroundCheckForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="state">State:</label>
+      <select id="state" name="state">
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <!-- Add more states as needed -->
+      </select>
+
+      <label for="city">City (optional):</label>
+      <input type="text" id="city" name="city">
+
+      <label for="zipCode">Zip Code (optional):</label>
+      <input type="text" id="zipCode" name="zipCode">
+
+      <button type="button" onclick="conductBackgroundCheck()">Conduct Background Check</button>
+    </form>
+
+    <div id="resultContainer">
+      <h2>Background Check Result</h2>
+      <p id="resultInfo"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
